@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="firstStackViewApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="fa3-BD-zdq">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Choose a Sign In Method" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uza-cH-ZE8">
+                                <rect key="frame" x="50" y="288" width="330.33333333333331" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="ATv-ui-H89"/>
+                                    <constraint firstAttribute="width" constant="330.32999999999998" id="ECE-go-tIL"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="53" id="svi-OH-yyw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNR-iA-t7v">
+                                <rect key="frame" x="113" y="199" width="204.33333333333337" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="TbE-iC-x8f"/>
+                                    <constraint firstAttribute="width" constant="204.33000000000001" id="Y7H-nf-6EB"/>
+                                </constraints>
+                                <string key="text">Advanced 
+Login</string>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="voi-Rj-PPQ">
+                                <rect key="frame" x="50" y="359" width="330.33333333333331" height="233.33333333333337"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2k-9V-fy5">
+                                        <rect key="frame" x="0.0" y="0.0" width="330.33333333333331" height="71"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Login With Facebook">
+                                            <backgroundConfiguration key="background" image="FB"/>
+                                            <directionalEdgeInsets key="contentInsets" top="25" leading="25" bottom="25" trailing="0.0"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eML-4Q-mmc">
+                                        <rect key="frame" x="0.0" y="81" width="330.33333333333331" height="71.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Login with Gmail">
+                                            <backgroundConfiguration key="background" image="Google"/>
+                                            <directionalEdgeInsets key="contentInsets" top="25" leading="25" bottom="25" trailing="0.0"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="748" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Au-gr-qOA">
+                                        <rect key="frame" x="0.0" y="162.33333333333337" width="330.33333333333331" height="71"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Login with Email">
+                                            <backgroundConfiguration key="background" image="Email"/>
+                                            <directionalEdgeInsets key="contentInsets" top="25" leading="25" bottom="25" trailing="0.0"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="233.33000000000001" id="PVT-ag-94h"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="233.33000000000001" id="Sjq-eL-d2G"/>
+                                    <constraint firstAttribute="width" constant="330.32999999999998" id="VbV-G4-JiK"/>
+                                    <constraint firstAttribute="height" constant="233.33000000000001" id="bW3-aV-OG3"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Uza-cH-ZE8" firstAttribute="top" secondItem="dNR-iA-t7v" secondAttribute="bottom" constant="8" symbolic="YES" id="7Dw-YM-ewy"/>
+                            <constraint firstItem="fa3-BD-zdq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8bs-Ln-s1S"/>
+                            <constraint firstItem="voi-Rj-PPQ" firstAttribute="top" secondItem="Uza-cH-ZE8" secondAttribute="bottom" constant="18" id="DXk-sj-GVI"/>
+                            <constraint firstItem="dNR-iA-t7v" firstAttribute="centerX" secondItem="Uza-cH-ZE8" secondAttribute="centerX" id="P0s-WY-86i"/>
+                            <constraint firstItem="Uza-cH-ZE8" firstAttribute="centerX" secondItem="voi-Rj-PPQ" secondAttribute="centerX" id="XvK-R8-BtD"/>
+                            <constraint firstItem="voi-Rj-PPQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bPV-UZ-S4m"/>
+                            <constraint firstAttribute="bottom" secondItem="fa3-BD-zdq" secondAttribute="bottom" id="msV-wa-v1L"/>
+                            <constraint firstItem="voi-Rj-PPQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="q2Q-VI-Pqe">
+                                <variation key="heightClass=compact-widthClass=regular" constant="160"/>
+                            </constraint>
+                            <constraint firstItem="fa3-BD-zdq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sGe-RE-h1T"/>
+                            <constraint firstAttribute="trailing" secondItem="fa3-BD-zdq" secondAttribute="trailing" id="uz1-gF-gib"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="414" height="896"/>
+        <image name="Email" width="285" height="69"/>
+        <image name="FB" width="285" height="69"/>
+        <image name="Google" width="285" height="69"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
